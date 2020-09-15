@@ -1,0 +1,10 @@
+{
+    "name": "Chrome Extension for Google Meet Attendance",
+    "description": "This extension creates an attendance sheet for a Google Meet",
+    "version": "0.0.1",
+    "permissions": ["contextMenus",     "activeTab"],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "manifest_version": 2
+}
