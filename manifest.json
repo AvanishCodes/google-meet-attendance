@@ -3,8 +3,16 @@
     "description": "This extension creates an attendance sheet for a Google Meet",
     "version": "0.0.1",
     "permissions": ["contextMenus",     "activeTab"],
+    "browser_action": {
+        "default_popup": "popup/index.html"
+    },
     "background": {
         "scripts": ["background.js"]
     },
+    "content_scripts": [{
+        "matches": ["*://meet.google.com/*"],
+        "js": ["content.js"]
+    }],
+    
     "manifest_version": 2
 }
